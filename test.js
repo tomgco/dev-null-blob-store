@@ -11,7 +11,6 @@ var common = {
     cb(null, fs(path.join(os.tmpdir(), ''+process.pid)))
   },
   teardown: function(t, store, blob, cb) {
-    rimraf.sync(store.path)
     cb()
   }
 }
